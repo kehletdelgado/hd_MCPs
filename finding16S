@@ -1,0 +1,4 @@
+#when you are in dir with your *.fna files
+
+for f in *.fna; do ./../../../Genus/barrnap/bin/barrnap --threads 40 --outseq "${f%.fna}.rna" < $f; done
+
